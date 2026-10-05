@@ -21,22 +21,22 @@ Aplicação web desenvolvida para otimizar e unificar a comunicação de ocorrê
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/seu-usuario/seletiva-azul-intercomunicacao.git](https://github.com/seu-usuario/seletiva-azul-intercomunicacao.git)```bash
+   git clone [https://github.com/seu-usuario/seletiva-azul-intercomunicacao.git](https://github.com/seu-usuario/seletiva-azul-intercomunicacao.git)
 
 2. Acesse a pasta do projeto e instale as dependências:
    ```bash
    cd seletiva-azul-intercomunicacao
-   npm install```bash
+   npm install
 
 3. Configure as variáveis de ambiente:
    Crie um arquivo .env na raiz do projeto e adicione suas credenciais do Supabase:
    ```bash
    VITE_SUPABASE_URL=sua_url_do_projeto
-   VITE_SUPABASE_ANON_KEY=sua_chave_anonima_publica```bash
+   VITE_SUPABASE_ANON_KEY=sua_chave_anonima_publica
 
 4. Inicie o servidor de desenvolvimento:
    ```bash
-   npm run dev```bash
+   npm run dev
 
 ## Autor
 Murillo de Freitas Levis Araújo 3DSEM - Etec de Praia Grande 2026
