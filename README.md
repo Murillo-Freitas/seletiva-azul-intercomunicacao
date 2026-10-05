@@ -1,16 +1,42 @@
-# React + Vite
+# Azul Intercomunicação
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida para otimizar e unificar a comunicação de ocorrências de voo em tempo real entre o Centro de Controle Operacional (CCO), a equipe de pátio (Handling) e os Passageiros (Clientes).
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Autenticação Baseada em Perfis:** Acesso segmentado com interfaces dedicadas para `cco`, `handling` e `cliente`.
+* **Atualizações em Tempo Real:** Sincronização instantânea de dados entre todos os usuários ativos utilizando Supabase Realtime (WebSockets).
+* **Painel CCO (Controle Operacional):** Gerenciamento completo com criação, edição, exclusão e log histórico de ocorrências de voo.
+* **Painel Handling (Pátio):** Visualização de alto contraste focada no Novo Horário de Partida (ETD), status operacional e roteiros padronizados para anúncios (PA / Megafone).
+* **Painel Cliente:** Acompanhamento dinâmico do status do voo, exibindo o progresso da solução e mensagens oficiais da equipe.
 
-## React Compiler
+## Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Front-end:** React.js, Vite
+* **Estilização:** Tailwind CSS
+* **Back-end/BaaS:** Supabase (Autenticação, Banco de Dados PostgreSQL, Realtime)
+* **Deploy:** Vercel
 
-## Expanding the ESLint configuration
+## Como rodar o projeto localmente
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone o repositório:
+   ```bash
+   git clone [https://github.com/seu-usuario/seletiva-azul-intercomunicacao.git](https://github.com/seu-usuario/seletiva-azul-intercomunicacao.git)```bash
+
+2. Acesse a pasta do projeto e instale as dependências:
+   ```bash
+   cd seletiva-azul-intercomunicacao
+   npm install```bash
+
+3. Configure as variáveis de ambiente:
+   Crie um arquivo .env na raiz do projeto e adicione suas credenciais do Supabase:
+   ```bash
+   VITE_SUPABASE_URL=sua_url_do_projeto
+   VITE_SUPABASE_ANON_KEY=sua_chave_anonima_publica```bash
+
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev```bash
+
+## Autor
+Murillo de Freitas Levis Araújo 3DSEM - Etec de Praia Grande 2026
